@@ -1,0 +1,32 @@
+<jsp:root xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:fn="http://java.sun.com/jsp/jstl/functions" xmlns:s="http://www.springframework.org/tags" xmlns:form="http://www.springframework.org/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:joda="http://www.joda.org/joda/time/tags" version="2.0">
+	<jsp:output omit-xml-declaration="yes" />
+
+<!-- 	<jsp:directive.attribute name="name" type="java.lang.String" required="true" rtexprvalue="true" description="path attribute" /> -->
+	<jsp:directive.attribute name="url" type="java.lang.String" required="false" rtexprvalue="true" description="url" />
+	
+	<!-- default values -->
+	<div class="col-md-1 pull-right">
+             <button type="button"  onclick="fnExcelReport('cvs');" class="btn green pull-right full">csv 다운로드</button>
+    </div>
+    <div class="col-md-1 pull-right">
+             <button type="button" onclick="fnExcelReport('xls');" class="btn green pull-right full">xls 다운로드</button>
+    </div>
+    
+    <c:choose>
+    	<c:when test="${empty url}">
+		    <script>
+			    function fnExcelReport(type){
+			    	 window.open(document.location.pathname+"/download?typeExcel="+type+"&amp;${param_url}","_blank");
+			    }
+		    </script>
+    	</c:when>
+    	<c:otherwise>
+	    	<script>
+	    		function fnExcelReport(type){
+				       	   window.open("${url}/download?typeExcel="+type+"&amp;${param_url}","_blank");
+	    		}
+			 </script>
+    	</c:otherwise>
+    </c:choose>
+    
+</jsp:root>

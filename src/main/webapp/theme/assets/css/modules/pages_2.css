@@ -1,0 +1,59 @@
+input[type="number"] {
+  border: 0;
+  outline: none;
+  width: 80px;
+  position: relative;
+  top: 3px;
+}
+.tab-counselor-detail .form-group .right {
+  position: relative;
+  right: -15px;
+}
+.tab-counselor-detail .form-group .item-review .glyphicon {
+  font-size: 16px;
+  position: relative;
+  top: 3px;
+}
+.tab-counselor-detail .form-group .item-review .glyphicon-star {
+  color: #45bdef;
+}
+.tab-counselor-detail .form-group .item-review .glyphicon-star-empty {
+  top: 5px;
+}
+.margin-top {
+  border-top: 1px solid #cccccc;
+  margin-top: 20px;
+  padding-top: 10px;
+  width: 100%;
+}
+.table-schedule th,
+.table-schedule td {
+  vertical-align: middle!important;
+}
+.list-sub-checkbox {
+  display: none;
+  padding-left: 15px;
+}
+.list-sub-checkbox label {
+  display: block;
+}
+.item-counselor_detail > .bootstrap-select {
+  width: 200px!important;
+}
+.btn-download {
+  font-size: 13px;
+  color: #333333;
+}
+.btn-download.btn-doc {
+  padding-left: 35px;
+  height: 36px;
+  background: url(../images/icon/icon_typeDoc.png) left 3px no-repeat !important;
+  background-size: 27px;
+  padding-top: 13px;
+}
+.btn-download.btn-pdf {
+  height: 36px;
+  padding-left: 35px;
+  background: url(../images/icon/pdf-icon1.png) left 3px no-repeat !important;
+  background-size: 25px;
+}

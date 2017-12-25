@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+	"-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN"
+	"http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+
+<tiles-definitions>
+
+    <definition name="login_layout" template="/WEB-INF/views/layout/layout_login.jsp">
+    
+    </definition>
+    
+    <definition name="payment_layout" template="/WEB-INF/views/layout/layout_payment.jsp">
+    
+    </definition>
+    <definition name="auth_layout" template="/WEB-INF/views/layout/layout_auth.jsp">
+        <put-attribute name="menu" value="/WEB-INF/views/layout/menu.jsp" />
+        <put-attribute name="heading" value="/WEB-INF/views/layout/heading.jsp" />
+        <put-attribute name="footer" value="/WEB-INF/views/layout/footer.jsp" />
+    </definition>
+
+    <definition extends="auth_layout" name="/auth/*">
+        <put-attribute name="title" value="{1}" />
+        <put-attribute name="body" value="/WEB-INF/views/auth/{1}.jsp" />
+    </definition>
+    
+    <definition extends="auth_layout" name="/auth/*/*">
+        <put-attribute name="title" value="{1}-{2}" />
+        <put-attribute name="body" value="/WEB-INF/views/auth/{1}/{2}.jsp" />
+    </definition>
+    
+    <definition extends="auth_layout" name="/auth/*/*/*">
+        <put-attribute name="title" value="{2} {3}" />
+        <put-attribute name="body" value="/WEB-INF/views/auth/{1}/{2}/{3}.jsp" />
+    </definition>
+    
+    <definition extends="login_layout" name="/login">
+        <put-attribute name="title" value="Login" />
+        <put-attribute name="body" value="/WEB-INF/views/login.jsp" />
+    </definition>
+
+	<definition extends="payment_layout" name="/payment">
+        <put-attribute name="title" value="Payment" />
+        <put-attribute name="body" value="/WEB-INF/views/payment.jsp" />
+    </definition>
+    
+    <definition extends="payment_layout" name="/payment/result">
+        <put-attribute name="title" value="Result" />
+        <put-attribute name="body" value="/WEB-INF/views/result.jsp" />
+    </definition>
+</tiles-definitions>

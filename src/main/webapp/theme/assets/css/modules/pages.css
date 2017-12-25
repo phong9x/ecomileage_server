@@ -1,0 +1,178 @@
+/* --------------------------------------------------------------------- */
+/* .header
+/* --------------------------------------------------------------------- */
+.page-name {
+  /**/
+}
+.text-left {
+  text-align: left !important;
+}
+.border-dashed {
+  width: 100%;
+  height: 1px;
+  border-top: 1px dashed #4A7EBB;
+  margin-bottom: 23px;
+}
+.controls-button {
+  margin: 5px 0 8px;
+}
+.nav-menu {
+  margin: 0 0 20px;
+  padding: 0;
+  border-bottom: 1px solid #dddddd;
+}
+.nav-menu li {
+  display: inline-block;
+}
+.nav-menu li.active a {
+  background-color: #eee;
+}
+.nav-menu li > a {
+  font-weight: bold;
+  font-size: 18px;
+}
+.nav-right {
+  width: 100%;
+  margin-bottom: 20px;
+  text-align: right;
+}
+.nav-right li {
+  display: inline-block;
+}
+#calendar {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.border_control {
+  border: 1px solid #dddddd;
+  display: table;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.border_control .group_item {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 8px 5px;
+}
+.border_control .group_item .sub_label {
+  display: table-cell;
+  width: 35px;
+  vertical-align: middle;
+}
+.border_control .group_item .sub_input {
+  display: table-cell;
+}
+.border_control .group_item .sub_input .item_time {
+  display: inline-block;
+  vertical-align: middle;
+}
+.border_control .group_item .sub_input .item_time .input-group-addon {
+  border: 1px solid #dddddd;
+  position: relative;
+  padding: 9px 12px;
+}
+.border_control .add_item {
+  display: block;
+}
+.border_control .trash {
+  border-left: 1px solid #dddddd;
+  padding: 8px 10px;
+  width: 16px;
+}
+.border_control .fa-remove {
+  font-size: 18px;
+}
+.item_inline {
+  display: inline-block;
+  vertical-align: middle;
+}
+.btn-sumbit {
+  padding: 7px 25px;
+}
+.reviews_result {
+  display: inline-block;
+  margin-left: 10px;
+}
+.reviews_result ul.reviews_list {
+  margin: 8px 0;
+  padding: 0;
+  display: inline-block;
+}
+.reviews_result ul.reviews_list li {
+  display: inline-block;
+  margin: 0;
+}
+.reviews_result ul.reviews_list li .star_item {
+  width: 19px;
+  height: 19px;
+}
+.reviews_result ul.reviews_list li .star_item img {
+  width: 19px;
+}
+.reviews_result .number_review {
+  font-size: 20px;
+  color: #ffffff;
+  padding-left: 5px;
+  position: relative;
+  top: 4px;
+  display: inline-block;
+}
+.list-comment {
+  width: 100%;
+  padding-top: 20px;
+}
+.list-comment .item-comment {
+  width: 100%;
+  border-top: 1px solid #4A7EBB;
+  padding: 15px 0;
+  display: inline-block;
+}
+.list-comment .item-comment .member-info {
+  margin-bottom: 5px;
+}
+.list-comment .item-comment .member-info .space {
+  padding: 0 7px;
+}
+.list-comment .item-comment .reviews-result {
+  margin: 0 0 5px;
+  padding: 0;
+}
+.list-comment .item-comment .reviews-result li {
+  display: inline-block;
+  margin: 0;
+}
+.list-comment .item-comment .reviews-result li .item_reviews {
+  width: 14px;
+  height: 15px;
+}
+.list-comment .item-comment .reviews-result li .item_reviews img {
+  width: 14px;
+}
+.list-comment .item-comment .item-question {
+  width: 100%;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+.list-comment .item-comment .item-answer {
+  width: 100%;
+  padding: 20px 0;
+  display: inline-block;
+  border-top: 1px dashed #4A7EBB;
+}
+.list-comment .item-comment .item-answer .avatar {
+  width: 5%;
+  display: table-cell;
+  padding-left: 40px;
+}
+.list-comment .item-comment .item-answer .avatar img {
+  max-width: 35px;
+}
+.list-comment .item-comment .item-answer .content-anwser {
+  width: 70%;
+  display: table-cell;
+  padding: 0;
+  vertical-align: top;
+}
+.list-comment .last-item {
+  border-bottom: 1px solid #4A7EBB;
+}
